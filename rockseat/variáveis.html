@@ -1,0 +1,68 @@
+<script>
+    var clima = "Quente"  - pode variar
+    console.log(clima)
+
+
+    const clima = "quente" - não pode variar...sempre será quente
+
+    let clima = true
+    console.log(typeof clima) para saber o tipo
+
+    #Scope  - determina a visibilidade de alguma variável no JS 
+
+    #BLOCO STATEMENT { bloco qualquer de código}
+    
+    var é global e tb local
+   
+   console.log('>existe x antes do bloco?',x) // vai aparecer indefinido
+    {
+        var x = 0 //embora seja uma variável local, na prática o JS pega essa variável e joga como global sem valor atribuído..o nome disso é hoisting
+    }
+    console.log('>existe x depois do bloco?',x) // vai aparecer 0
+
+
+
+
+    const e let são locais e só funcionam no escopo onde foi criada, após sua declaração
+
+
+    let y = 0
+
+    {
+        {
+            {
+                y=1
+                console.log('>existe y', y) //y=1
+            }
+        }
+    }
+console.log('>existe y', y)   // y=1
+
+
+
+
+
+//declaração or declaration
+var name
+// assignment or atribuição de valores
+name="Mike"
+
+
+//agrupamento de declarações
+let age, isHuman
+
+age= 18
+isHuman = true
+
+
+console.log(name, age, isHuman)
+OU 
+
+console.log('O'+name+'tem'+age+'anos!')
+
+
+
+
+
+
+</script>
