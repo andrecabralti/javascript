@@ -1,0 +1,206 @@
+<script>
+
+//criar um aplicativo de frases motivacionais
+
+declaration - declaração da função - function statement
+function createPhrases() {
+    console.log('Estudar é muito bom')
+    console.log('Paciência e persitência')
+    console.log('Revisão é mãe do aprendizado')
+}
+
+
+//executar a função : execute (executar), run (rodar) , call (chamar), invoke (invocar)
+
+createPhrase()
+
+console.log('fim do programa')
+
+
+
+// function expression
+//function anonymous
+const sum = function(){
+
+}
+
+
+//Paramêtros (parameters)
+const sum = function(number1, number2){
+    console.log(number1+number2) //só funciona aqui dentro
+}
+sum(2,3) //argumentos - arguments
+
+
+
+
+const sum = function(number1, number2){
+    let total = number1+number2 //SEMPRE USAR UMA PALAVRA RESERVADA, DE PREFERÊNCIA LET PQ VAR É GLOBAL
+    return total  //a função só vai dar algum retorno se tiver return 
+}
+
+let number1= 34
+let number2 = 25
+
+console.log(`O número 1 é ${number 1}`)
+console.log(`O número 2 é ${number2}`)
+console.log(`a soma é ${sum(number1, number2)}`)
+
+
+
+
+
+
+function fazerSuco(fruta1, fruta2) {
+    return fruta1 + fruta2
+}
+
+const copo = fazerSuco('banana', 'maçã')
+console.log(copo)
+
+
+let subject = 'create video'
+
+function createThink(subject){
+    return subject
+}
+
+console.log(createThink(subject))  //create video
+console.log(subject) //create video
+
+
+
+
+
+
+
+let subject = 'create video'
+
+function createThink(subject){
+    subject = 'study'
+    return subject
+}
+
+console.log(createThink(subject))  //study
+console.log(subject) //create video
+
+
+
+
+
+let subject = 'create video'
+
+function createThink(){  // como está sem parâmetro, redefine a variável
+    subject = 'study'
+    return subject
+}
+
+console.log(createThink(subject))  //study
+console.log(subject) //study
+
+
+
+
+
+
+
+let subject = 'create video'
+
+function createThink(){  // como está sem parâmetro, redefine a variável
+    subject = 'study'
+   
+
+console.log(subject)  //undefined
+createThink()  //só atualiza pq a função não tem retorno
+console.log(subject) //study
+
+
+
+//function hoisting
+sayMyName()   // O retorno será Mayk pq ele lê como se a função estivesse antes.
+
+function sayMyName(){       
+    console.log('Mayk')
+}
+
+
+
+
+
+sayMyName()   // O retorno será erro pq vou adicionada a palavra chave var, não sofre elevação
+
+var sayMyName = function(){       
+    console.log('Mayk')
+}
+
+
+
+
+
+
+
+//arrow function
+
+const sayMyName = () => {  //geralmente é usada com const e tem q ser feita na ordem correta pq não vai sofrer hoisting
+    console.log('Mayk')
+}
+
+sayMyName()
+
+
+
+const sayMyName = (name) => {  
+    console.log(name)
+}
+
+sayMyName('Mayk')
+
+
+
+
+//callback function
+
+function sayMyName(name) {
+    console.log ('antes de executar a funcao callback')
+    
+    name()
+    
+    console.log('depois de executar a funcao callback')
+}
+
+sayMyName(
+    () => {
+        console.log('Estouem uma callback')
+    
+    }
+)
+
+
+
+
+
+/* 
+
+Function() constructor
+
+*expresssão new
+*criar um novo objeto
+*this keyword
+
+*/
+
+
+function Person() {
+    this.name = name  // esse this sempre vai se referir ao myke de const myke
+    this.walk = function() {
+        return this.name + "está andando"
+    }
+}
+
+const mayk = new Person("Mayk") //Está instanciando um novo objeto
+const joao = new Person("Joao")
+console.log(mayk.mayk())  // Mayk está andando
+console.log(joao.walk())   //Joao está andando
+
+
+</script>
