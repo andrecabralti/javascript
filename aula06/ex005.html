@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(24, 12, 184);
+            color: white;
+            font: normal 10pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <H1>iniciando estudos com DOM</H1>
+    <P>Aqui vai o resultado</P>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript.</p>
+    <div id="msg">Cique em mim</div>
+    <script>
+        var p1= window.document.getElementsByTagName ('p') [0] // o 0 é o primeiro elemento, no caso o primeiro parágrafo
+        //window.document.write('Está escrito assim:' + p1.innerText) // Código para pegar o conteúdo do p1 e mostrar na tela
+
+        /* p1.style.color = 'blue'  transforma a letra do p1 em azul
+        document.write(p1.innerHtml) pega o texto com toda a formatação... o innerText pega só o texto sem formatação
+        var d= window.document.getElementById('msg')
+        d.innerText = 'Olá!' 
+        d.style.bacground = 'green'
+        */
+
+        var d = window.document.querySelector('div#msg') // método mais recente e mais prático qnd se está fazendo alterações rápidas no site
+        d.style.color = 'blue ' // mudou a cor para blue
+    </script>
+
+</body>
+</html>
