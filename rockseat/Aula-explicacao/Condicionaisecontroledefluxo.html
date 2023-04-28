@@ -1,0 +1,84 @@
+<script>
+
+//if...else
+
+let temperature = 36.5
+if (temperature >= 37){
+    console.log('Febre')
+} else{
+    console.log('Saudável')
+}
+
+
+if(temparature >=37.5){
+    console.log('febre alta')
+}else if(temperature <37.5 && temperature >= 37{
+    console.log('Febre moderada')
+}else{
+    console.log("Saudável")
+}
+
+
+
+// Switch
+
+switch(expression){
+    case'a': 
+        // código
+        break
+    case 'b':
+        //código
+        break
+    default:  //sempre será o caminho tomado se não surgir o caso a ou b
+        //código
+        break
+}
+
+
+
+switch (operator){
+    case'+':
+        result = number1+number2
+        break
+    case '-':
+        result = number1-number2
+        break
+    case '*':
+        result = number*number2
+        break
+    case '/':
+        result = number1 / number2
+        break
+
+    default
+        console.log('Não foi possível calcular')
+        break
+}
+
+
+
+
+
+
+
+// Primeiro eu vou tentar try, se tiver algum erro vai para throw que será capturado por catch
+// throw
+
+function sayMyName(name= '')
+    if (name === ''){
+        throw new Error("Nome é necessário!")
+    }
+    console.log('depois do erro')
+
+
+//try....catch
+
+try{
+    sayMyName()
+} catch (e) {
+    console.log(e)
+}
+
+
+
+</script>
