@@ -1,0 +1,45 @@
+<script>
+
+for(let i= 1; i <= 10; i++) {
+    console.log(i)
+}
+
+
+
+
+
+let i=0;
+while(i<10){ //Funciona bem qnd não se sabe o momento exato q vai parar a repetição
+    console.log(i)
+
+    i++;
+
+}
+
+
+//for...of
+
+
+let name = 'Mayk'
+let names = ['João', 'Paulo', 'Pedro']
+
+for(let name of names){
+    console.log(name)
+}
+
+
+
+//for...in loop com as propriedades de um objeto
+
+let person = {
+    name: 'John',
+    age: 30,
+    weight: 88.6
+
+}
+
+for(let property in person) {  // a cada volta vai pegar uma propriedade de person e escrever na tela
+    console.log(property)
+    console.log(person[property])
+}
+</script>
