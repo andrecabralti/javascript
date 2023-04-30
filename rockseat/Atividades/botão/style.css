@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+.container{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+
+}
+
+.container button{
+    display: flex;
+   
+    align-items: center;
+    
+    line-height: 0; /*alinhar texto*/
+
+    background-color: blueviolet;
+    border: none;
+    gap:.4rem;
+}
+
+p{
+    color:white;
+    font-weight:bold;
+    line-height: 0;
+
+}
+
+.container span {
+    width: 2rem;
+    height: 2rem;
+    
+}

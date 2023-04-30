@@ -1,0 +1,26 @@
+@charset "UTF-8";
+*{
+    margin: 10px;
+}
+div.box{
+    display: flex;
+    flex-direction: row;
+    border: none;
+    height: 90vh;
+    gap: 1rem;
+    
+}
+
+div#a{
+    border: 1px solid green;
+    flex-basis: 25%;
+    padding: 20px;
+
+
+}
+
+div:nth-child(2){
+    border: 1px solid red;
+    flex-grow: 1;
+    padding: 20px;
+}

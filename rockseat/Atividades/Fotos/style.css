@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    gap:.8rem;
+
+}
+
+.container div{
+    border: 1px solid red;
+    justify-content: center;
+    display: flex;
+    height: auto%;
+    width: 30%;
+
+}
