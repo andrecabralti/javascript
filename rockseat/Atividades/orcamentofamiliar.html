@@ -1,25 +1,24 @@
-
 <script>
 
-    
+
     let family = {
         receitas: [5589.23],
-        despesas: [1596.44 , 179 , 275.35 , 329,529, 289,117.58,69, 131.12, 72.47,232.88,900,70]
+        despesas: [1596.44, 179, 275.35, 329, 529, 89, 117.58, 69, 131.12, 72.47, 232.88, 900, 70]
         //aluguel, faculdade, celular, plano, pai, mãe, luz, gás, cartão, cartão, cartão, empréstimo, assinaturas
     }
 
     function somar(array) {
         let total = 0;
-        
-        for(let value of array) {
+
+        for (let value of array) {
             total += value
         }
 
-        return total 
+        return total
 
     }
 
-    function calcularOrcamento () {
+    function calcularOrcamento() {
         const calculoreceitas = somar(family.receitas)
         const calculodespesas = somar(family.despesas)
 
@@ -32,7 +31,7 @@
             mensagem = "postivo"
         }
 
-        console.log (`Seu saldo é ${mensagem}: R$ ${total.toFixed(2)}`)
+        console.log(`Seu saldo é ${mensagem}: R$ ${total.toFixed(2)}`)
     }
 
     calcularOrcamento()
